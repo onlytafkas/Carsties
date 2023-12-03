@@ -1,6 +1,6 @@
-﻿namespace AuctionService.DTOs;
+﻿namespace Contracts;
 
-public class AuctionDto
+public class AuctionCreated
 {
     public Guid Id { get; set; }
     public int ReservePrice { get; set; }
@@ -19,4 +19,3 @@ public class AuctionDto
     public int Mileage { get; set; }
     public string ImageUrl { get; set; }
 }
-

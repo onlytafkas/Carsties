@@ -16,7 +16,7 @@ export const authOptions: NextAuthOptions = {
         })
     ],
     callbacks: {
-        async jwt({token, profile, account}) {
+        async jwt({token, user, profile, account}) {
             if (profile) {
                 token.username = profile.username
             }
